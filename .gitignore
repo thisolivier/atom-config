@@ -1,0 +1,10 @@
+storage
+compile-cache
+dev
+.git
+.npm
+.apm
+.node-gyp
+blob-store
+projects.cson
+storage/*

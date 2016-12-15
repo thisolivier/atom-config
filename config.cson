@@ -1,0 +1,25 @@
+"*":
+  core:
+    disabledPackages: [
+      "language-javascript"
+      "Remote-FTP"
+      "autocomplete-modules"
+      "background-tips"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "seti-ui"
+      "ficus-syntax"
+    ]
+    useCustomTitleBar: true
+  editor:
+    fontSize: 17
+  "exception-reporting":
+    userId: "30ede2d9-dcb3-0552-f1f4-b04e58148119"
+  "git-diff":
+    showIconsInEditorGutter: true
+  "seti-ui":
+    compactView: true
+    themeColor: "Yellow"
+  welcome:
+    showOnStartup: false

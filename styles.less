@@ -1,0 +1,68 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+// style the background color of the tree view
+.tree-view {
+  // background-color: whitesmoke;
+}
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+  // color: white;
+  // background-color: hsl(180, 24%, 12%);
+  line-height: 1.15;
+  letter-spacing: -0.3px;
+  font-family: 'pseudonym-wide', 'open-sans', Helvetica, sans-serif;
+  font-weight: 300;
+  transition: all 0.1s;
+}
+
+atom-pane:not(:first-child) {
+  border-left: 0.5em dashed #2c4045;
+}
+
+.is-focused{
+  border-left: 0.25em solid #cb5e9a;
+  border-right: 0.25em solid #cb5e9a;
+}
+
+atom-text-editor:not(.is-focused){
+  opacity:0.94;
+  border-left: 0.25em solid transparent;
+  border-right: 0.25em solid transparent;
+}
+
+.is-focused:before {
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 0.5em solid rgba(277,209,60,0.2);
+};
+
+atom-text-editor .gutter.git-diff-icon .line-number, atom-text-editor::shadow .gutter.git-diff-icon .line-number{
+  padding-left: 0;
+}
+
+// To style other content in the text editor's shadow DOM, use the ::shadow expression
+atom-text-editor::shadow .cursor {
+  // border-color: red;
+}
